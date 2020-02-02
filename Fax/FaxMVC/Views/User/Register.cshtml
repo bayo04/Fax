@@ -8,23 +8,23 @@
 
 <div class="container-fluid col-md-6 offset-3">
     @*<form>
-        <label for="firstName" class="col-md-8 offset-2">First name</label>
-        <input type="text" asp-for="User.Name" placeholder="Name" class="col-md-8 offset-2" />
+            <label for="firstName" class="col-md-8 offset-2">First name</label>
+            <input type="text" asp-for="User.Name" placeholder="Name" class="col-md-8 offset-2" />
 
-        <label for="lastName" class="col-md-8 offset-2">Last name</label>
-        <input type="text" asp-for="User.LastName" placeholder="Last name" class="col-md-8 offset-2" />
+            <label for="lastName" class="col-md-8 offset-2">Last name</label>
+            <input type="text" asp-for="User.LastName" placeholder="Last name" class="col-md-8 offset-2" />
 
-        <label for="email" class="col-md-8 offset-2">Email</label>
-        <input type="email" asp-for="User.Email" placeholder="Email" class="col-md-8 offset-2" />
+            <label for="email" class="col-md-8 offset-2">Email</label>
+            <input type="email" asp-for="User.Email" placeholder="Email" class="col-md-8 offset-2" />
 
-        <label for="userName" class="col-md-8 offset-2">Username</label>
-        <input type="text" asp-for="User.UserName" placeholder="Username" class="col-md-8 offset-2" />
+            <label for="userName" class="col-md-8 offset-2">Username</label>
+            <input type="text" asp-for="User.UserName" placeholder="Username" class="col-md-8 offset-2" />
 
-        <label for="semester" class="col-md-8 offset-2">Semester</label>
-        <input type="number" asp-for="User.Semester" placeholder="Semester" class="col-md-8 offset-2" />
-        <button asp-controller="User" asp-action="AddUser"></button>
-        
-    </form>*@
+            <label for="semester" class="col-md-8 offset-2">Semester</label>
+            <input type="number" asp-for="User.Semester" placeholder="Semester" class="col-md-8 offset-2" />
+            <button asp-controller="User" asp-action="AddUser"></button>
+
+        </form>*@
 
 
     <form name="register" role="form" novalidate class="form-validation">
@@ -98,7 +98,7 @@
             </div>
         </div>
         <div>
-            <button type="submit" class="btn btn-primary waves-effect" asp-controller="User" asp-action="AddUser">Save</button>
+            <button type="submit" class="btn btn-primary waves-effect" asp-controller="User" asp-action="RegistrationHandler">Save</button>
         </div>
     </form>
 

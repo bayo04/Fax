@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Core.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using System;
 
 namespace Core

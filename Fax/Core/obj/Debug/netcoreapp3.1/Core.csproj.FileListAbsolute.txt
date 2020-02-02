@@ -8,3 +8,13 @@ C:\Users\Korisnik\source\repos\Fax\Core\bin\Debug\netcoreapp3.1\Core.runtimeconf
 C:\Users\Korisnik\source\repos\Fax\Core\bin\Debug\netcoreapp3.1\Core.pdb
 C:\Users\Korisnik\source\repos\Fax\Core\obj\Debug\netcoreapp3.1\Core.dll
 C:\Users\Korisnik\source\repos\Fax\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Korisnik\Documents\Fax\Fax\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\Korisnik\Documents\Fax\Fax\Core\bin\Debug\netcoreapp3.1\Core.runtimeconfig.json
+C:\Users\Korisnik\Documents\Fax\Fax\Core\bin\Debug\netcoreapp3.1\Core.runtimeconfig.dev.json
+C:\Users\Korisnik\Documents\Fax\Fax\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Korisnik\Documents\Fax\Fax\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Korisnik\Documents\Fax\Fax\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\Korisnik\Documents\Fax\Fax\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\Korisnik\Documents\Fax\Fax\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\Korisnik\Documents\Fax\Fax\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Korisnik\Documents\Fax\Fax\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache

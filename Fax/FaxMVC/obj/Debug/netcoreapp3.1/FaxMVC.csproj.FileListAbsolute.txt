@@ -318,3 +318,4 @@ C:\Users\Korisnik\Documents\Fax\Fax\FaxMVC\obj\Debug\netcoreapp3.1\FaxMVC.Views.
 C:\Users\Korisnik\Documents\Fax\Fax\FaxMVC\obj\Debug\netcoreapp3.1\FaxMVC.csproj.CopyComplete
 C:\Users\Korisnik\Documents\Fax\Fax\FaxMVC\obj\Debug\netcoreapp3.1\FaxMVC.dll
 C:\Users\Korisnik\Documents\Fax\Fax\FaxMVC\obj\Debug\netcoreapp3.1\FaxMVC.pdb
+C:\Users\Korisnik\Documents\Fax\Fax\FaxMVC\obj\Debug\netcoreapp3.1\Razor\Views\User\Login.cshtml.g.cs

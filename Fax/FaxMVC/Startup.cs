@@ -14,6 +14,8 @@ using Unity;
 using Application.UserServices;
 using System.Web.Mvc;
 using Unity.Mvc5;
+using Core.Interfaces;
+using Microsoft.AspNetCore.Identity;
 
 namespace FaxMVC
 {
@@ -30,7 +32,14 @@ namespace FaxMVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<IUserAppService, UserAppService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<ApplicationUserManager>();
+            services.AddIdentity<User, IdentityRole>(options =>
+            {
+                options.User.RequireUniqueEmail = false;
+            })
+    .AddEntityFrameworkStores<FaxDbContext>()
+    .AddDefaultTokenProviders();
             //services.AddDbContext<FaxDbContext>(cfg =>
             //{
             //    cfg.UseSqlServer(Configuration.GetConnectionString("CoreConfigurationString"));
@@ -41,9 +50,6 @@ namespace FaxMVC
                 cfg.UseSqlServer("Server=localhost\\SQLEXPRESS; Database=Faksistent; Trusted_Connection=True;");
             }
                 );
-            //var container = new UnityContainer();
-            //container.RegisterType<IUserAppService, UserAppService>();
-            //DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

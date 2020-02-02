@@ -8,6 +8,6 @@ namespace FaxMVC.Models
 {
     public class RegisterViewModel
     {
-        public RegisterDto User { get; set; }
+        public CreateUserDto User { get; set; }
     }
 }

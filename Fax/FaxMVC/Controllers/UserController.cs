@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Application.UserServices;
 using Application.UserServices.Dtos;
 using Core;
+using Core.Interfaces;
 using FaxMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,8 +13,8 @@ namespace FaxMVC.Controllers
 {
     public class UserController : Controller
     {
-        public IUserAppService _userAppService { get; set; }
-        public UserController(IUserAppService userAppService)
+        public IUserService _userAppService { get; set; }
+        public UserController(IUserService userAppService)
         {
             _userAppService = userAppService;
         }
@@ -22,9 +23,29 @@ namespace FaxMVC.Controllers
             return View();
         }
 
-        public IActionResult AddUser(RegisterDto user)
+        public async Task<IActionResult> RegistrationHandler(CreateUserDto user)
         {
-            _userAppService.Register(user);
+            var success = await _userAppService.Add(user);
+            if (success)
+            {
+                return View("../Home/Index");
+            }
+            user.Password = "";
+            RegisterViewModel model = new RegisterViewModel
+            {
+                User = user
+            };
+            return View("Register", model);
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult LoginHandler(LoginDto user)
+        {
+            
             return View();
         }
     }

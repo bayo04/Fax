@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Application.UserServices.Dtos
 {
-    public class RegisterDto
+    public class CreateUserDto
     {
         public string Email { get; set; }
         public string Name { get; set; }

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Core
 {
-    public class FaxDbContext : IdentityDbContext<User>, IFaxDbContext
+    public class FaxDbContext : IdentityDbContext<User>
     {
         public FaxDbContext(DbContextOptions<FaxDbContext> options) : base(options)
         {
